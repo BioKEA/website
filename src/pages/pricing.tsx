@@ -49,7 +49,7 @@ export default function Pricing() {
 
         <div className="grid gap-8 md:grid-cols-3 max-w-6xl mx-auto">
           {plans.map((plan, index) => (
-            <div key={index} className="p-8 rounded-xl bg-gradient-to-br from-blue-900/30 to-purple-900/30 backdrop-blur-sm">
+            <div key={index} className="p-8 rounded-xl bg-gradient-to-br from-blue-900/30 to-yellow-500/30 backdrop-blur-sm">
               <h2 className="text-2xl font-bold mb-4">{plan.name}</h2>
               <div className="text-3xl font-bold mb-6 text-blue-400">{plan.price}</div>
               <ul className="space-y-3">

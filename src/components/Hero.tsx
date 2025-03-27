@@ -67,7 +67,7 @@ export default function Hero() {
       )}
       
       {/* Semi-transparent blue-purple gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-900/30 to-purple-900/30 z-5" />
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-900/30 to-yellow-500/30 z-5" />
       <div className="absolute inset-0 bg-black/40 z-10" /> {/* Dark overlay for better text visibility */}
 
       {/* Content */}
@@ -78,14 +78,14 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="text-center"
         >
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-yellow-500">
             Welcome to BioKEA
           </h1>
           <p className="text-xl md:text-2xl text-white max-w-3xl mx-auto mb-8">
             Transforming bioinformatics with the power of agent-based AI. Making complex 
             bioinformatics workflows simpler, faster, and more effective.
           </p>
-          <button className="px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 rounded-lg text-lg font-semibold transition-all">
+          <button className="px-8 py-3 bg-gradient-to-r from-blue-500 to-yellow-500 hover:from-blue-600 hover:to-yellow-600 rounded-lg text-lg font-semibold transition-all">
             Get Started
           </button>
         </MotionDiv>

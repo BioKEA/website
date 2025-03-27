@@ -9,12 +9,13 @@ export default function Research() {
       </Head>
 
       <main className="container mx-auto px-4">
-        <h1 className="text-4xl font-bold mb-8">Research</h1>
+        <h1 className="text-4xl font-bold mb-8">Our Research</h1>
         <div className="max-w-4xl mx-auto space-y-8">
           {/* Add research content here */}
-          <div className="p-6 rounded-xl bg-gradient-to-br from-blue-900/50 to-purple-900/50">
-            <h2 className="text-xl font-bold mb-4">Latest Publications</h2>
-            <p className="text-gray-300">Exploring the frontiers of AI in biological research</p>
+          <div className="p-6 rounded-xl bg-gradient-to-br from-blue-900/50 to-yellow-500/50">
+            <p className="text-xl leading-relaxed">
+              BioKEA's research team is focused on advancing the field of computational biology through innovative AI approaches.
+            </p>
           </div>
         </div>
       </main>
