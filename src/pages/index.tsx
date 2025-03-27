@@ -40,29 +40,8 @@ export default function Home() {
       </Head>
 
       <main>
-        {/* Hero Section */}
-        <section className="relative h-screen flex items-center justify-center overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-900/50 to-purple-900/50 z-10" />
-          <div className="container mx-auto px-4 relative z-20">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-center"
-            >
-              <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
-                Welcome to BioKEA
-              </h1>
-              <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">
-                Transforming bioinformatics with the power of agent-based AI. Making complex 
-                bioinformatics workflows simpler, faster, and more effective.
-              </p>
-              <button className="px-8 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg text-lg font-semibold transition-colors">
-                Get Started
-              </button>
-            </motion.div>
-          </div>
-        </section>
+        {/* Use the Hero component instead of defining the hero section inline */}
+        <Hero />
 
         {/* AI-Driven Bioinformatics Section */}
         <section className="py-20 bg-gradient-to-b from-black to-blue-900/20">
@@ -120,7 +99,7 @@ export default function Home() {
               Whether you're a researcher, institution, or organization, we're here to support your journey 
               with smart, scalable solutions that accelerate your work and lead to more meaningful discoveries.
             </p>
-            <button className="px-8 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg text-lg font-semibold transition-colors">
+            <button className="px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 rounded-lg text-lg font-semibold transition-all">
               Join Us Today
             </button>
           </div>

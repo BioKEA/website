@@ -6,22 +6,55 @@ export default function Contact() {
     email: '',
     message: ''
   })
+  const [status, setStatus] = useState({
+    type: '', // 'success' or 'error'
+    message: ''
+  })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [testEmailUrl, setTestEmailUrl] = useState('')
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+    setIsSubmitting(true)
+    setStatus({ type: '', message: '' })
+    setTestEmailUrl('')
     
-    // Here you would typically integrate with your email service
-    // For now, we'll just log the data
-    console.log('Sending email to frederik@biokea.ai')
-    console.log('Form data:', formData)
-    
-    // You can integrate with services like SendGrid, AWS SES, or your own email server
     try {
-      // Add your email sending logic here
-      alert('Thank you for your message! We will get back to you soon.')
-      setFormData({ email: '', message: '' })
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      const data = await response.json()
+
+      if (response.ok) {
+        setStatus({
+          type: 'success',
+          message: 'Thank you for your message! We will get back to you soon.'
+        })
+        
+        // If using a test account, show the preview URL
+        if (data.testAccount && data.testAccount.previewUrl) {
+          setTestEmailUrl(data.testAccount.previewUrl)
+        }
+        
+        setFormData({ email: '', message: '' })
+      } else {
+        setStatus({
+          type: 'error',
+          message: data.error || 'There was an error sending your message. Please try again.'
+        })
+      }
     } catch (error) {
-      alert('There was an error sending your message. Please try again.')
+      setStatus({
+        type: 'error',
+        message: 'There was an error sending your message. Please try again.'
+      })
+    } finally {
+      setIsSubmitting(false)
     }
   }
 
@@ -61,6 +94,7 @@ export default function Contact() {
                   onChange={(e) => setFormData({...formData, email: e.target.value})}
                   className="w-full p-3 rounded-lg bg-gray-900 border border-gray-800 focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
                   required
+                  disabled={isSubmitting}
                 />
               </div>
               <div>
@@ -72,13 +106,44 @@ export default function Contact() {
                   onChange={(e) => setFormData({...formData, message: e.target.value})}
                   className="w-full p-3 rounded-lg bg-gray-900 border border-gray-800 focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
                   required
+                  disabled={isSubmitting}
                 ></textarea>
               </div>
+              
+              {status.message && (
+                <div className={`p-3 rounded-lg ${status.type === 'success' ? 'bg-green-900/50 text-green-300' : 'bg-red-900/50 text-red-300'}`}>
+                  {status.message}
+                </div>
+              )}
+              
+              {testEmailUrl && (
+                <div className="p-3 rounded-lg bg-blue-900/50 text-blue-300">
+                  <p className="mb-2">Test email sent! View it here:</p>
+                  <a 
+                    href={testEmailUrl} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-blue-300 underline hover:text-blue-200 break-all"
+                  >
+                    {testEmailUrl}
+                  </a>
+                </div>
+              )}
+              
               <button
                 type="submit"
-                className="w-full py-3 px-6 bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors"
+                className={`w-full py-3 px-6 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 rounded-lg transition-all flex justify-center items-center ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
+                disabled={isSubmitting}
               >
-                Send Message
+                {isSubmitting ? (
+                  <>
+                    <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    Sending...
+                  </>
+                ) : 'Send Message'}
               </button>
             </form>
           </div>

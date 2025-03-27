@@ -3,16 +3,16 @@ import { TeamMember } from '../types'
 
 const teamMembers: TeamMember[] = [
   {
-    name: "Sean Jungbluth",
-    role: "Co-Founder & CEO",
+    name: "Dr. Sean Jungbluth",
+    role: "Co-Founder",
     image: "/assets/images/profile-sean.png",
     bio: "Sean is a passionate microbial ecologist, oceanographer, and advocate for ML/AI innovation. He is eager to explore the transformative potential of computationally-driven advancements, both within the scientific realm and across various fields."
   },
   {
     name: "Dr. Frederik Schulz",
-    role: "Co-Founder & CTO",
+    role: "Co-Founder",
     image: "/assets/images/profile-frederik.png",
-    bio: "Dr. Frederik Schulz is a microbiologist and expert in using AI/ML for discovery and characterization of novel bacterial, archaeal, and eukaryotic microbes and viruses in complex samples."
+    bio: "Frederik is a microbiologist with extensive expertise in applying ML/AI to discover and characterize novel bacterial, archaeal, and eukaryotic microbes, as well as viruses, in complex samples."
   }
 ]
 
