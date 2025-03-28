@@ -51,7 +51,7 @@ export default function Careers() {
             {positions.map((position, index) => (
               <div 
                 key={index}
-                className="p-6 rounded-xl bg-gradient-to-br from-blue-900/30 to-purple-900/30"
+                className="p-6 rounded-xl bg-gradient-to-br from-blue-900/30 to-yellow-500/30"
               >
                 <h2 className="text-2xl font-bold mb-2">{position.title}</h2>
                 <div className="flex flex-wrap gap-4 mb-4 text-sm">

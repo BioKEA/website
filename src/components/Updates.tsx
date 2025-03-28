@@ -25,7 +25,7 @@ export default function Updates() {
             <motion.a
               key={index}
               href={update.link}
-              className="block p-6 rounded-xl bg-gradient-to-r from-blue-900/30 to-purple-900/30 hover:from-blue-900/40 hover:to-purple-900/40 transition-all"
+              className="block p-6 rounded-xl bg-gradient-to-r from-blue-900/30 to-yellow-500/30 hover:from-blue-900/40 hover:to-yellow-500/40 transition-all"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}

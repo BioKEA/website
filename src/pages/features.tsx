@@ -32,13 +32,13 @@ export default function Features() {
       </Head>
 
       <main className="container mx-auto px-4 py-12">
-        <h1 className="text-5xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
+        <h1 className="text-5xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-yellow-500">
           Platform Features
         </h1>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2 max-w-6xl mx-auto">
           {features.map((feature, index) => (
-            <div key={index} className="p-8 rounded-xl bg-gradient-to-br from-blue-900/30 to-purple-900/30 backdrop-blur-sm">
+            <div key={index} className="p-8 rounded-xl bg-gradient-to-br from-blue-900/30 to-yellow-500/30 backdrop-blur-sm">
               <div className="text-4xl mb-4">{feature.icon}</div>
               <h2 className="text-2xl font-bold mb-4">{feature.title}</h2>
               <p className="text-gray-300">{feature.description}</p>

@@ -40,7 +40,7 @@ export default function Documentation() {
 
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {sections.map((section, index) => (
-            <div key={index} className="p-6 rounded-xl bg-gradient-to-br from-blue-900/30 to-purple-900/30">
+            <div key={index} className="p-6 rounded-xl bg-gradient-to-br from-blue-900/30 to-yellow-500/30">
               <h2 className="text-2xl font-bold mb-4">{section.title}</h2>
               <ul className="space-y-2">
                 {section.items.map((item, idx) => (

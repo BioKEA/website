@@ -31,7 +31,7 @@ export default function Team() {
               className="text-center"
             >
               <div className="relative w-48 h-48 mx-auto mb-6">
-                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-600/20 to-purple-600/20" />
+                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-600/20 to-yellow-500/20" />
                 <img
                   src={member.image}
                   alt={member.name}

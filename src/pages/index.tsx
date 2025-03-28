@@ -63,7 +63,7 @@ export default function Home() {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.2 }}
-                  className="p-6 rounded-xl bg-gradient-to-br from-blue-900/30 to-purple-900/30 backdrop-blur-sm"
+                  className="p-6 rounded-xl bg-gradient-to-br from-blue-900/30 to-yellow-500/30 backdrop-blur-sm"
                 >
                   <div className="text-4xl mb-4">{feature.icon}</div>
                   <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
@@ -79,7 +79,7 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-4xl font-bold mb-8 text-center">High-Value Curated Datasets for DeSci</h2>
-              <div className="bg-gradient-to-br from-blue-900/30 to-purple-900/30 rounded-2xl p-8">
+              <div className="bg-gradient-to-br from-blue-900/30 to-yellow-500/30 rounded-2xl p-8">
                 <p className="text-xl text-gray-300 leading-relaxed">
                   BioKEA offers access to high-value, curated biological datasets that are vital for the 
                   DeSci (Decentralized Science) community. These datasets, carefully curated from cutting-edge 
@@ -99,7 +99,7 @@ export default function Home() {
               Whether you're a researcher, institution, or organization, we're here to support your journey 
               with smart, scalable solutions that accelerate your work and lead to more meaningful discoveries.
             </p>
-            <button className="px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 rounded-lg text-lg font-semibold transition-all">
+            <button className="px-8 py-3 bg-gradient-to-r from-blue-500 to-yellow-500 hover:from-blue-600 hover:to-yellow-600 rounded-lg text-lg font-semibold transition-all">
               Join Us Today
             </button>
           </div>

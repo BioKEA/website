@@ -80,3 +80,7 @@ logs
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Cloudflare
+.wrangler/
+dist/
