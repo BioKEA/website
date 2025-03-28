@@ -1,10 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  optimizeFonts: false, // Disable font optimization
-  experimental: {
-    optimizeCss: false // Disable CSS optimization that requires critters
-  }
+  output: 'export',
+  images: {
+    unoptimized: true,
+  },
+  // Ensure trailing slashes are used
+  trailingSlash: true,
 }
 
 module.exports = nextConfig 
