@@ -30,6 +30,9 @@ export default function Navbar() {
             <Link href="/contact" className="text-gray-300 hover:text-white transition-colors">
               Contact
             </Link>
+            <a href="https://agentisj.pages.dev" className="text-gray-300 hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
+              AgentisJ
+            </a>
           </div>
 
           <button 
@@ -75,6 +78,9 @@ export default function Navbar() {
           <Link href="/contact" className="block px-3 py-2 text-gray-300 hover:text-white transition-colors">
             Contact
           </Link>
+          <a href="https://agentisj.pages.dev" className="block px-3 py-2 text-gray-300 hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
+            AgentisJ
+          </a>
         </div>
       </motion.div>
     </nav>
