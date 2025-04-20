@@ -13,27 +13,27 @@ export default function Hero() {
 
   useEffect(() => {
     const video = videoRef.current
-    
+
     if (video) {
       const handleError = () => {
         console.error("Video failed to load, using fallback image")
         setVideoFailed(true)
       }
-      
+
       const handleCanPlay = () => {
         setVideoFailed(false)
       }
 
       video.addEventListener('error', handleError)
       video.addEventListener('canplay', handleCanPlay)
-      
+
       // If video takes too long to load, use the fallback image
       const timeoutId = setTimeout(() => {
         if (video.readyState === 0) {
           setVideoFailed(true)
         }
       }, 3000)
-      
+
       return () => {
         video.removeEventListener('error', handleError)
         video.removeEventListener('canplay', handleCanPlay)
@@ -43,14 +43,14 @@ export default function Hero() {
   }, [])
 
   return (
-    <section 
+    <section
       className="relative h-screen flex items-center justify-center overflow-hidden"
     >
       {/* Video or fallback image background */}
       {videoFailed ? (
-        <img 
-          src="/assets/videos/videoV1.png" 
-          alt="BioKEA Background" 
+        <img
+          src="/assets/videos/videoV1.png"
+          alt="BioKEA Background"
           className="absolute inset-0 w-full h-full object-cover z-0"
         />
       ) : (
@@ -65,7 +65,7 @@ export default function Hero() {
           <source src="/assets/videos/videoV1.mp4" type="video/mp4" />
         </video>
       )}
-      
+
       {/* Semi-transparent blue-purple gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-900/30 to-yellow-500/30 z-5" />
       <div className="absolute inset-0 bg-black/40 z-10" /> {/* Dark overlay for better text visibility */}
@@ -78,11 +78,12 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="text-center"
         >
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-yellow-500">
+          <h1 className="text-5xl md:text-7xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-yellow-500">
             Welcome to BioKEA
           </h1>
+          <span className="block text-xl md:text-2xl font-medium mb-6 text-blue-300">an AI-driven Bioinformatics OS</span>
           <p className="text-xl md:text-2xl text-white max-w-3xl mx-auto mb-8">
-            Transforming bioinformatics with the power of agent-based AI. Making complex 
+            Transforming bioinformatics with the power of agent-based AI. Making complex
             bioinformatics workflows simpler, faster, and more effective.
           </p>
           <button className="px-8 py-3 bg-gradient-to-r from-blue-500 to-yellow-500 hover:from-blue-600 hover:to-yellow-600 rounded-lg text-lg font-semibold transition-all">
@@ -92,4 +93,4 @@ export default function Hero() {
       </div>
     </section>
   )
-} 
+}

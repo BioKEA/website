@@ -30,12 +30,15 @@ export default function Navbar() {
             <Link href="/contact" className="text-gray-300 hover:text-white transition-colors">
               Contact
             </Link>
+            <Link href="/#edna" className="text-gray-300 hover:text-white transition-colors">
+              eDNA Solutions
+            </Link>
             <a href="https://agentisj.pages.dev" className="text-gray-300 hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
-              AgentisJ
+              Agentis Journal
             </a>
           </div>
 
-          <button 
+          <button
             className="md:hidden p-2"
             onClick={() => setIsOpen(!isOpen)}
           >
@@ -60,7 +63,7 @@ export default function Navbar() {
       </div>
 
       {/* Mobile menu */}
-      <motion.div 
+      <motion.div
         className={`md:hidden ${isOpen ? 'block' : 'hidden'}`}
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: isOpen ? 1 : 0, y: isOpen ? 0 : -20 }}
@@ -78,11 +81,14 @@ export default function Navbar() {
           <Link href="/contact" className="block px-3 py-2 text-gray-300 hover:text-white transition-colors">
             Contact
           </Link>
+          <Link href="/#edna" className="block px-3 py-2 text-gray-300 hover:text-white transition-colors">
+            eDNA Solutions
+          </Link>
           <a href="https://agentisj.pages.dev" className="block px-3 py-2 text-gray-300 hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
-            AgentisJ
+            Agentis Journal
           </a>
         </div>
       </motion.div>
     </nav>
   )
-} 
+}
