@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer className="py-12 bg-black/80">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
           <div>
             <h3 className="text-xl font-bold mb-4">BioKEA.ai</h3>
             <p className="text-gray-400">
@@ -37,6 +37,17 @@ export default function Footer() {
               <li><a href="/privacy" className="hover:text-white">Privacy Policy</a></li>
               <li><a href="/terms" className="hover:text-white">Terms of Service</a></li>
             </ul>
+          </div>
+
+          <div>
+            <h4 className="font-bold mb-4">Investors</h4>
+            <a
+              href="/investors"
+              className="inline-block px-6 py-3 bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 rounded-lg text-lg font-semibold transition-all text-white shadow-md"
+            >
+              Invest in the Future of Bioinformatics
+            </a>
+             <p className="text-gray-400 text-sm mt-2">$7 M Seed Round Open</p>
           </div>
         </div>
 

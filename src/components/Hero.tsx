@@ -78,13 +78,11 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="text-center"
         >
-          <h1 className="text-5xl md:text-7xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-yellow-500">
-            Welcome to BioKEA
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-yellow-500">
+            AI-Powered Science at Scale
           </h1>
-          <span className="block text-xl md:text-2xl font-medium mb-6 text-blue-300">an AI-driven Bioinformatics OS</span>
           <p className="text-xl md:text-2xl text-white max-w-3xl mx-auto mb-8">
-            Transforming bioinformatics with the power of agent-based AI. Making complex
-            bioinformatics workflows simpler, faster, and more effective.
+            Coupling cutting-edge agentic AI frameworks with wet-lab based protocol. Preparing to empower robotics to build the future.
           </p>
           <button className="px-8 py-3 bg-gradient-to-r from-blue-500 to-yellow-500 hover:from-blue-600 hover:to-yellow-600 rounded-lg text-lg font-semibold transition-all">
             Get Started

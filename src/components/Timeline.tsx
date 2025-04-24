@@ -13,6 +13,18 @@ const milestones: Milestone[] = [
   {
     date: "2024 Q3",
     description: "Release of open-source research tools"
+  },
+  {
+    date: "2025 Q1-Q2",
+    description: "Placeholder: Expansion of BioinfoOS features & Large Data Collider v2"
+  },
+  {
+    date: "2025 Q3-Q4",
+    description: "Placeholder: Launch Labhus Automation Hub services & Agentis Journal public release"
+  },
+  {
+    date: "2026",
+    description: "Placeholder: Scale Droplet eDNA operations & establish key strategic partnerships"
   }
 ]
 

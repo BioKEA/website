@@ -18,11 +18,8 @@ export default function Navbar() {
           </Link>
 
           <div className="hidden md:flex space-x-8">
-            <Link href="/platform" className="text-gray-300 hover:text-white transition-colors">
+            <Link href="/bioinfoos" className="text-gray-300 hover:text-white transition-colors">
               Platform
-            </Link>
-            <Link href="/research" className="text-gray-300 hover:text-white transition-colors">
-              Research
             </Link>
             <Link href="/team" className="text-gray-300 hover:text-white transition-colors">
               Team
@@ -30,12 +27,18 @@ export default function Navbar() {
             <Link href="/contact" className="text-gray-300 hover:text-white transition-colors">
               Contact
             </Link>
-            <Link href="/#edna" className="text-gray-300 hover:text-white transition-colors">
-              eDNA Solutions
+            <Link href="/droplet-edna" className="text-gray-300 hover:text-white transition-colors">
+              Droplet eDNA
             </Link>
-            <a href="https://agentisj.pages.dev" className="text-gray-300 hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
+            <Link href="/agentis-journal" className="text-gray-300 hover:text-white transition-colors">
               Agentis Journal
-            </a>
+            </Link>
+            <Link href="/labhus-automation" className="text-gray-300 hover:text-white transition-colors">
+              Labhus
+            </Link>
+            <Link href="/investors" className="text-gray-300 hover:text-white transition-colors">
+              Investors
+            </Link>
           </div>
 
           <button
@@ -69,11 +72,8 @@ export default function Navbar() {
         animate={{ opacity: isOpen ? 1 : 0, y: isOpen ? 0 : -20 }}
       >
         <div className="px-2 pt-2 pb-3 space-y-1 bg-black">
-          <Link href="/platform" className="block px-3 py-2 text-gray-300 hover:text-white transition-colors">
+          <Link href="/bioinfoos" className="block px-3 py-2 text-gray-300 hover:text-white transition-colors">
             Platform
-          </Link>
-          <Link href="/research" className="block px-3 py-2 text-gray-300 hover:text-white transition-colors">
-            Research
           </Link>
           <Link href="/team" className="block px-3 py-2 text-gray-300 hover:text-white transition-colors">
             Team
@@ -81,12 +81,18 @@ export default function Navbar() {
           <Link href="/contact" className="block px-3 py-2 text-gray-300 hover:text-white transition-colors">
             Contact
           </Link>
-          <Link href="/#edna" className="block px-3 py-2 text-gray-300 hover:text-white transition-colors">
-            eDNA Solutions
+          <Link href="/droplet-edna" className="block px-3 py-2 text-gray-300 hover:text-white transition-colors">
+            Droplet eDNA
           </Link>
-          <a href="https://agentisj.pages.dev" className="block px-3 py-2 text-gray-300 hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
+          <Link href="/agentis-journal" className="block px-3 py-2 text-gray-300 hover:text-white transition-colors">
             Agentis Journal
-          </a>
+          </Link>
+          <Link href="/labhus-automation" className="block px-3 py-2 text-gray-300 hover:text-white transition-colors">
+            Labhus
+          </Link>
+          <Link href="/investors" className="block px-3 py-2 text-gray-300 hover:text-white transition-colors">
+            Investors
+          </Link>
         </div>
       </motion.div>
     </nav>
