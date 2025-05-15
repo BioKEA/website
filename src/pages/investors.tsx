@@ -7,7 +7,7 @@ export default function Investors() {
     <div className="min-h-screen bg-gray-900 text-white">
       <Head>
         <title>Investors - BioKEA</title>
-        <meta name="description" content="Information for investors regarding BioKEA's $7M seed round." />
+        <meta name="description" content="Information for investors regarding BioKEA's pre-seed round." />
         {/* Add other meta tags as needed */}
       </Head>
 

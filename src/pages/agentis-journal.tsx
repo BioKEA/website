@@ -48,7 +48,7 @@ export default function AgentisJournal() {
 
         <div className="text-center mb-12"> 
             <a
-            href="https://agentis.science"
+            href="https://biokea-publishing.pages.dev/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-8 py-3 bg-gradient-to-r from-blue-500 to-yellow-500 hover:from-blue-600 hover:to-yellow-600 rounded-lg text-lg font-semibold transition-all"
