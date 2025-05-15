@@ -18,7 +18,7 @@ export default function AgentisJournal() {
           <h1 className="text-4xl font-bold">Agentis Journal</h1>
         </div>
 
-        <p className="text-lg text-gray-300 mb-4">
+        <p className="text-lg text-gray-300 mb-4 text-center">
           Information about the AI-co-review workflow, value proposition, and submission guidelines will be here.
         </p>
         
