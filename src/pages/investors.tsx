@@ -16,9 +16,9 @@ export default function Investors() {
       <main className="container mx-auto px-4 py-16">
         <h1 className="text-4xl font-bold mb-8">Investors</h1>
         <p className="text-lg text-gray-300 mb-4">
-          Information regarding our open $7 M seed round, one-pager download, and contact form will be available here soon.
+          Information regarding our open pre-seed round, one-pager download, and contact form will be available here soon.
         </p>
-        {/* Placeholder for: One-pager download, seed round details, contact form */}
+        {/* Placeholder for: One-pager download, pre-seed round details, contact form */}
 
         {/* Example: Placeholder contact form */}
         <div className="mt-12 p-8 bg-gray-800 rounded-lg">
