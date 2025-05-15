@@ -38,7 +38,7 @@ export default function Footer() {
             >
               Invest in the Future of Bioinformatics
             </a>
-             <p className="text-gray-400 text-sm mt-2">$7 M Seed Round Open</p>
+             <p className="text-gray-400 text-sm mt-2">Pre-seed Round Open</p>
           </div>
         </div>
 
@@ -62,7 +62,7 @@ export default function Footer() {
             <p className="text-gray-400 text-sm">
               BioKEA's open-access journal suite reimagines peer review with AI co-reviewers, accelerating scientific communication.
             </p>
-            <a href="https://agentisj.pages.dev" className="text-blue-400 hover:text-blue-300 text-sm mt-2 inline-block" target="_blank" rel="noopener noreferrer">Visit Agentis &raquo;</a>
+            <a href="https://biokea-publishing.pages.dev/" className="text-blue-400 hover:text-blue-300 text-sm mt-2 inline-block" target="_blank" rel="noopener noreferrer">Visit Agentis &raquo;</a>
           </div>
         </div>
 

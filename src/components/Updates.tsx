@@ -3,14 +3,19 @@ import { Update } from '../types'
 
 const updates: Update[] = [
   {
-    date: "March 2024",
-    title: "BioKEA.ai Platform Beta Release",
-    link: "/blog/beta-release"
+    date: "March 2025",
+    title: "BioKEA is founded",
+    link: "#"
   },
   {
-    date: "February 2024",
-    title: "New Research Collaboration Announced",
-    link: "/blog/collaboration"
+    date: "April 2025",
+    title: "Agentis Journal prototype launched",
+    link: "#"
+  },
+  {
+    date: "May 2025",
+    title: "Sean talking @ Joint Berkeley Initiative for Microbiome Sciences Industry Mixer",
+    link: "#"
   }
 ]
 
