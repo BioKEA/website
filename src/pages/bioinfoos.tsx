@@ -38,7 +38,7 @@ export default function BioinfoOS() {
                   <strong className="text-white">Equitable Data Governance:</strong> Built-in Access and Benefit-Sharing (ABS) mechanisms and blockchain integration ensure fair, revenue-sharing data usage.
                 </li>
                 <li>
-                  <strong className="text-white">Actionable APIs:</strong> Clean REST/GraphQL APIs allow you to go from query to actionable insight in minutes.
+                  <strong className="text-white">Ultra-fast Agentified Workflows:</strong> Expert workflows with proven heuristics, all using fleets of AI agents.
                 </li>
             </ul>
           </div>
