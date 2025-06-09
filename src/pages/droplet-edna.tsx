@@ -5,7 +5,7 @@ export default function DropletEDNA() {
   return (
     <div className="min-h-screen bg-gray-900 text-white">
       <Head>
-        <title>Droplet eDNA - BioKEA</title>
+        <title>Droplet - BioKEA</title>
         <meta name="description" content="BioKEA's Droplet division offers end-to-end environmental DNA (eDNA) services." />
       </Head>
 
@@ -13,14 +13,14 @@ export default function DropletEDNA() {
         <div className="flex items-center gap-4 mb-8">
           <img 
             src="/assets/images/Pillar3-Droplet.png" 
-            alt="Droplet eDNA Pillar Icon"
+            alt="Droplet Pillar Icon"
             className="h-20 w-auto" />
-          <h1 className="text-4xl font-bold">Droplet eDNA</h1>
+          <h1 className="text-4xl font-bold">Droplet</h1>
         </div>
 
         <div className="max-w-4xl mx-auto text-center mb-12 mt-12">
           <p className="text-xl text-gray-300">
-            BioKEA's Droplet division delivers end-to-end environmental DNA (eDNA) insight, from field surveys to data analysis, enabling powerful biodiversity monitoring and ecological research.
+          BioKEA's Droplet division delivers end-to-end environmental anaylses, including environmental DNA (eDNA) insights, from field surveys to data analysis, enabling powerful biodiversity monitoring and ecological research.
           </p>
         </div>
 

@@ -28,7 +28,7 @@ export default function Navbar() {
               Contact
             </Link>
             <Link href="/droplet-edna" className="text-gray-300 hover:text-white transition-colors">
-              Droplet eDNA
+              Droplet
             </Link>
             <Link href="/agentis-journal" className="text-gray-300 hover:text-white transition-colors">
               Agentis Journal
@@ -82,7 +82,7 @@ export default function Navbar() {
             Contact
           </Link>
           <Link href="/droplet-edna" className="block px-3 py-2 text-gray-300 hover:text-white transition-colors">
-            Droplet eDNA
+            Droplet
           </Link>
           <Link href="/agentis-journal" className="block px-3 py-2 text-gray-300 hover:text-white transition-colors">
             Agentis Journal
