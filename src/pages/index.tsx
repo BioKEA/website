@@ -207,21 +207,6 @@ export default function Home() {
         <Updates />
       </main>
 
-      {/* Trusted By Section */}
-      <section className="py-16 bg-gray-800">
-        <div className="container mx-auto px-4 text-center">
-          <h3 className="text-2xl font-semibold text-gray-400 mb-8">Trusted By Leading Institutions</h3>
-          <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-6">
-            {/* Placeholder Logos/Names */}
-            <span className="text-xl text-gray-300 font-medium">NOAA</span>
-            <span className="text-xl text-gray-300 font-medium">Stanford University</span>
-            <span className="text-xl text-gray-300 font-medium">SFEI</span>
-            <span className="text-xl text-gray-300 font-medium">LBNL</span>
-            <span className="text-xl text-gray-300 font-medium">SFSU</span>
-          </div>
-        </div>
-      </section>
-
       <Footer />
     </div>
   )
