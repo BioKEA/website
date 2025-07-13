@@ -72,8 +72,8 @@ export default function Home() {
         {/* Four Pillars Section */}
         <section id="pillars" className="py-20 bg-gray-900 text-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-bold text-center mb-16">Our Four Pillars</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <h2 className="text-4xl font-bold text-center mb-16">Our Three Pillars</h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Pillar 1: BioinfoOS */}
               <div className="p-6 rounded-xl bg-gradient-to-br from-blue-900/30 to-yellow-500/30 backdrop-blur-sm flex flex-col items-center text-center">
                 <img src="/assets/images/Pillar1-BioinfoOS.png" alt="BioinfoOS Pillar" className="h-20 w-auto mb-4"/>
@@ -99,15 +99,6 @@ export default function Home() {
                 <p className="text-gray-300 mb-4 flex-grow">Reimagining scientific publishing with our open-access journal featuring an innovative AI co-review process. Agentis accelerates knowledge sharing while ensuring rigorous peer evaluation.</p>
                 <a href="/agentis-journal" className="mt-auto inline-block px-6 py-2 bg-gradient-to-r from-blue-500 to-yellow-500 hover:from-blue-600 hover:to-yellow-600 rounded-lg text-sm font-semibold transition-all">
                   Visit Agentis &raquo;
-                </a>
-              </div>
-              {/* Pillar 4: Labhus Automation */}
-              <div className="p-6 rounded-xl bg-gradient-to-br from-blue-900/30 to-yellow-500/30 backdrop-blur-sm flex flex-col items-center text-center">
-                <img src="/assets/images/Pillar4-Labhus.png" alt="Labhus Automation Pillar" className="h-20 w-auto mb-4"/>
-                <h3 className="text-xl font-bold mb-2">Labhus Automation Hub</h3>
-                <p className="text-gray-300 mb-4 flex-grow">Integrating cutting-edge robotics and automation into the wet lab. Labhus provides scalable, automated solutions to enhance research efficiency, reproducibility, and throughput.</p>
-                <a href="/labhus-automation" className="mt-auto inline-block px-6 py-2 bg-gradient-to-r from-blue-500 to-yellow-500 hover:from-blue-600 hover:to-yellow-600 rounded-lg text-sm font-semibold transition-all">
-                  See Automation &raquo;
                 </a>
               </div>
             </div>
