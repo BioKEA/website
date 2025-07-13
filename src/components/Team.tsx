@@ -11,11 +11,13 @@ export default function Team() {
           transition={{ duration: 0.8 }}
           className="flex justify-center"
         >
-          <img
-            src="/assets/images/team.png"
-            alt="BioKEA Team"
-            className="max-w-full h-auto rounded-lg shadow-lg"
-          />
+          <div className="flex flex-col items-center">
+            <img
+              src="/assets/images/team2.png"
+              alt="BioKEA Team"
+              className="w-full max-w-[75%] h-auto rounded-lg shadow-xl mb-8 mx-auto"
+            />
+          </div>
         </motion.div>
       </div>
     </section>

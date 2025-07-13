@@ -1,59 +1,46 @@
 import Head from 'next/head'
+import Footer from '../components/Footer'
 
 export default function About() {
   return (
-    <div className="min-h-screen pt-20">
+    <div className="min-h-screen bg-gray-900 text-white">
       <Head>
-        <title>About | BioKEA.ai</title>
-        <meta name="description" content="About BioKEA.ai - Revolutionizing biological research with AI" />
+        <title>About - BioKEA</title>
+        <meta name="description" content="About BioKEA - AI-Powered Science at Scale" />
       </Head>
 
-      <main className="container mx-auto px-4 py-12">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl font-bold text-center mb-16">About BioKEA.ai</h1>
+      <main className="container mx-auto px-4 py-16">
+        <div className="flex items-center gap-4 mb-8">
+          <h1 className="text-4xl font-bold">About BioKEA</h1>
+        </div>
+          
+        <div className="p-8 bg-gray-800 rounded-lg mb-8">
+          <p className="text-lg text-gray-300 mb-6">
+            BioKEA is pioneering the future of biological research through AI-powered solutions. 
+            We're building the infrastructure for next-generation scientific discovery.
+          </p>
 
           <div className="space-y-8">
             <section>
+              <h2 className="text-2xl font-bold mb-4">Our Vision</h2>
+              <p className="text-gray-300">
+                To accelerate scientific discovery by combining cutting-edge AI with advanced laboratory automation, 
+                making breakthrough research more accessible and efficient than ever before.
+              </p>
+            </section>
+
+            <section>
               <h2 className="text-2xl font-bold mb-4">Our Mission</h2>
               <p className="text-gray-300">
-                At BioKEA.ai, we're dedicated to accelerating biological research through 
-                cutting-edge artificial intelligence. Our platform combines advanced machine 
-                learning with deep biological expertise to solve complex challenges in life sciences.
+                We're dedicated to empowering scientists and researchers with intelligent tools and automation, 
+                revolutionizing how biological research is conducted and analyzed.
               </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold mb-4">Our Story</h2>
-              <p className="text-gray-300">
-                Founded in San Francisco, California, BioKEA.ai emerged from a collaboration 
-                between leading AI researchers and biologists. We recognized the potential of 
-                AI to revolutionize how we understand and work with biological systems.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold mb-4">Our Technology</h2>
-              <p className="text-gray-300">
-                Our proprietary AI models are trained on extensive biological datasets, 
-                enabling unprecedented accuracy in protein structure prediction, sequence 
-                analysis, and molecular interaction modeling. We're committed to pushing 
-                the boundaries of what's possible in computational biology.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold mb-4">Our Values</h2>
-              <ul className="list-disc list-inside text-gray-300 space-y-2">
-                <li>Innovation in biological research</li>
-                <li>Scientific rigor and reproducibility</li>
-                <li>Open collaboration with the research community</li>
-                <li>Ethical AI development</li>
-                <li>Environmental sustainability</li>
-              </ul>
             </section>
           </div>
         </div>
       </main>
+
+      <Footer />
     </div>
   )
 } 

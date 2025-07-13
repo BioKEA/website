@@ -11,10 +11,13 @@ export default function Contact() {
 
       <main className="container mx-auto px-4 py-16 flex-grow flex items-center justify-center">
         <div className="text-center p-8 bg-gray-800 rounded-lg shadow-lg">
-          <img 
-            src="/assets/images/team.png" 
-            alt="BioKEA Team / Robot Faces Placeholder"
-            className="max-h-40 w-auto mx-auto mb-6 rounded-md" />
+          <div className="mb-8">
+            <img
+              src="/assets/images/team2.png"
+              alt="BioKEA Team"
+              className="w-full max-w-[75%] h-auto rounded-lg shadow-lg mx-auto"
+            />
+          </div>
           <h1 className="text-3xl font-bold mb-4">biokea.ai</h1>
           <p className="text-xl text-gray-300 mb-2">
             Berkeley, CA, USA

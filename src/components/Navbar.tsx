@@ -18,26 +18,23 @@ export default function Navbar() {
           </Link>
 
           <div className="hidden md:flex space-x-8">
+            <Link href="/about" className="text-gray-300 hover:text-white transition-colors">
+              About
+            </Link>
             <Link href="/bioinfoos" className="text-gray-300 hover:text-white transition-colors">
               Platform
             </Link>
-            <Link href="/team" className="text-gray-300 hover:text-white transition-colors">
-              Team
-            </Link>
-            <Link href="/contact" className="text-gray-300 hover:text-white transition-colors">
-              Contact
+            <Link href="/agentis-journal" className="text-gray-300 hover:text-white transition-colors">
+              Agentis
             </Link>
             <Link href="/droplet-edna" className="text-gray-300 hover:text-white transition-colors">
               Droplet
             </Link>
-            <Link href="/agentis-journal" className="text-gray-300 hover:text-white transition-colors">
-              Agentis Journal
-            </Link>
-            <Link href="/labhus-automation" className="text-gray-300 hover:text-white transition-colors">
-              Labhus
-            </Link>
             <Link href="/investors" className="text-gray-300 hover:text-white transition-colors">
               Investors
+            </Link>
+            <Link href="/contact" className="text-gray-300 hover:text-white transition-colors">
+              Contact
             </Link>
           </div>
 
@@ -72,26 +69,23 @@ export default function Navbar() {
         animate={{ opacity: isOpen ? 1 : 0, y: isOpen ? 0 : -20 }}
       >
         <div className="px-2 pt-2 pb-3 space-y-1 bg-black">
+          <Link href="/about" className="block px-3 py-2 text-gray-300 hover:text-white transition-colors">
+            About
+          </Link>
           <Link href="/bioinfoos" className="block px-3 py-2 text-gray-300 hover:text-white transition-colors">
             Platform
           </Link>
-          <Link href="/team" className="block px-3 py-2 text-gray-300 hover:text-white transition-colors">
-            Team
-          </Link>
-          <Link href="/contact" className="block px-3 py-2 text-gray-300 hover:text-white transition-colors">
-            Contact
+          <Link href="/agentis-journal" className="block px-3 py-2 text-gray-300 hover:text-white transition-colors">
+            Agentis
           </Link>
           <Link href="/droplet-edna" className="block px-3 py-2 text-gray-300 hover:text-white transition-colors">
             Droplet
           </Link>
-          <Link href="/agentis-journal" className="block px-3 py-2 text-gray-300 hover:text-white transition-colors">
-            Agentis Journal
-          </Link>
-          <Link href="/labhus-automation" className="block px-3 py-2 text-gray-300 hover:text-white transition-colors">
-            Labhus
-          </Link>
           <Link href="/investors" className="block px-3 py-2 text-gray-300 hover:text-white transition-colors">
             Investors
+          </Link>
+          <Link href="/contact" className="block px-3 py-2 text-gray-300 hover:text-white transition-colors">
+            Contact
           </Link>
         </div>
       </motion.div>
